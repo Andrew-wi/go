@@ -1,16 +1,25 @@
-import sys
-
 # define class point, containing:
 # x-position
 # y-position
 # occupied with a stone or not
 class Point(object):
-    def __init__(self, xPosition, yPosition, occupied):
+    def __init__(self, xPosition, yPosition, occupied, color):
         self.xPosition = xPosition
         self.yPosition = yPosition
         self.occupied = occupied
+        self.color = color
 
-# define placeStone function, which player uses to place a stone
+class Shape(object):
+    def __init__(self, stoneNumber):
+        self.stoneNumber = stoneNumber
+    # TODO
+
+# printBoard function, which prints the current layout of the board
+def printBoard():
+    print('+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+')
+    print('|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |')
+
+# placeStone function, which player uses to place a stone
 def placeStone(x, y):
     # TODO
     return 0
